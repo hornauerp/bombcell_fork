@@ -72,7 +72,7 @@ if any(isnan(thisWaveform)) % kilosort can sometimes return all NaNs in a wavefo
     peakLocs = NaN;
     troughLocs = NaN;
     waveformDuration_peakTrough = NaN;
-    if param. param.spDecayLinFit
+    if param.spDecayLinFit
         num_buff = 6;
     else
         num_buff = 10;

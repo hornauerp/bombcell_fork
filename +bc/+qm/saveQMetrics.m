@@ -44,6 +44,7 @@ if ~istable(param)
     if isempty(param.gain_to_uV)
         param.gain_to_uV = 'NaN';
     end
+    param.rawFile = NaN;
     parquetwrite([fullfile(savePath, '_bc_parameters._bc_qMetrics.parquet')], struct2table(param))
 end
 % save quality metrics
